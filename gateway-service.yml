@@ -6,6 +6,9 @@ spring:
     name: gateway-service
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: user-service
           uri: lb://user-service
@@ -23,3 +26,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+      fetch-registry: true
+      register-with-eureka: true
