@@ -3,12 +3,22 @@ server:
 spring:
   application:
     name: event-service
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/events
+    username: postgres
+    password: postgres
+
   datasource:
     url: jdbc:postgresql://localhost:5432/events
-    username: user
-    password: pass
+    username: postgres
+    password: postgres
+
+  flyway:
+    enabled: true
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+ 
