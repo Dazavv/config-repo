@@ -4,7 +4,7 @@ spring:
   application:
     name: group-event-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/group-events
+    url: jdbc:postgresql://localhost:5432/group-events-db
     username: postgres
     password: postgres
 
