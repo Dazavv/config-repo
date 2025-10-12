@@ -5,8 +5,8 @@ spring:
     name: group-event-service
   datasource:
     url: jdbc:postgresql://localhost:5432/group-events
-    username: user
-    password: pass
+    username: postgres
+    password: postgres
 
 eureka:
   client:

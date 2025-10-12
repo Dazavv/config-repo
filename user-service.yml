@@ -5,8 +5,8 @@ spring:
     name: user-service
   datasource:
     url: jdbc:postgresql://localhost:5432/users
-    username: user
-    password: pass
+    username: postgres
+    password: postgres
 
 eureka:
   client:
