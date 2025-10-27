@@ -23,6 +23,8 @@ spring:
           uri: lb://group-event-service
           predicates:
             - Path=/api/v1/groupEvent/**
+
+eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
