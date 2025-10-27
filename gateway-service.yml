@@ -6,9 +6,9 @@ spring:
     name: gateway-service
   cloud:
     gateway:
-     # discovery:
-     #   locator:
-     #     enabled: true
+     discovery:
+       locator:
+         enabled: true
       server:
         webflux:
           routes:
