@@ -4,28 +4,35 @@ server:
 spring:
   application:
     name: gateway-service
+
   cloud:
     gateway:
-     discovery:
-       locator:
-         enabled: true
-     routes:
-#        - id: user-service
-#          uri: lb://user-service
-#          predicates:
-#            - Path=/api/v1/user/**
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/v1/user/**
         - id: event-service
           uri: lb://event-service
           predicates:
             - Path=/api/v1/event/**
-#        - id: group-event-service
-#          uri: lb://group-event-service
-#          predicates:
-#            - Path=/api/v1/groupEvent/**
+        - id: group-event-service
+          uri: lb://group-event-service
+          predicates:
+            - Path=/api/v1/groupEvent/**
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-      fetch-registry: true
-      register-with-eureka: true
+    fetch-registry: true
+    register-with-eureka: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
