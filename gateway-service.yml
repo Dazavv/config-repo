@@ -9,7 +9,7 @@ spring:
      discovery:
        locator:
          enabled: true
-    server:
+     server:
         webflux:
           routes:
             - id: user-service
@@ -30,3 +30,8 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
       fetch-registry: true
       register-with-eureka: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
