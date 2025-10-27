@@ -9,27 +9,26 @@ spring:
      discovery:
        locator:
          enabled: true
-     server:
-        webflux:
-          routes:
-            - id: user-service
-              uri: lb://user-service
-              predicates:
-                - Path=/api/v1/user/**
-              filters:
-                - StripPrefix=1
-            - id: event-service
-              uri: lb://event-service
-              predicates:
-                - Path=/api/v1/event/**
-              filters:
-                - StripPrefix=1
-            - id: group-event-service
-              uri: lb://group-event-service
-              predicates:
-                - Path=/api/v1/groupEvent/**
-              filters:
-                - StripPrefix=1
+
+     routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/v1/user/**
+          filters:
+            - StripPrefix=1
+        - id: event-service
+          uri: lb://event-service
+          predicates:
+            - Path=/api/v1/event/**
+          filters:
+            - StripPrefix=1
+        - id: group-event-service
+          uri: lb://group-event-service
+          predicates:
+            - Path=/api/v1/groupEvent/**
+          filters:
+            - StripPrefix=1
 eureka:
   client:
     service-url:
