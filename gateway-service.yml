@@ -9,7 +9,7 @@ spring:
      discovery:
        locator:
          enabled: true
-      server:
+    server:
         webflux:
           routes:
             - id: user-service
