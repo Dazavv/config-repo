@@ -17,7 +17,7 @@ spring:
   flyway:
     enabled: true
     locations: classpath:db/migration
-    url: r2dbc:postgresql://localhost:5432/events_db
+    url: jdbc:postgresql://localhost:5432/events_db
     user: postgres
     password: postgres
 
