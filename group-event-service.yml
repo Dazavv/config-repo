@@ -10,6 +10,25 @@ spring:
     enabled: true
     locations: classpath:db/migration
 
+resilience4j:
+  circuitbreaker:
+    instances:
+      userService:
+        slidingWindowType: COUNT_BASED
+        slidingWindowSize: 20
+        minimumNumberOfCalls: 10
+        permittedNumberOfCallsInHalfOpenState: 3
+        waitDurationInOpenState: 10s
+        ignoreExceptions:
+#          - com.hs.lab2.groupeventservice.exceptions.UserNotFoundException
+          - feign.FeignException$NotFound
+          - reactivefeign.client.ReactiveFeignException
+        recordExceptions:
+          - java.net.ConnectException
+          - java.net.SocketTimeoutException
+          - feign.RetryableException
+
+
 management:
   endpoints:
     web:
