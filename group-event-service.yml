@@ -20,7 +20,7 @@ resilience4j:
         permittedNumberOfCallsInHalfOpenState: 3
         waitDurationInOpenState: 10s
         ignoreExceptions:
-#          - com.hs.lab2.groupeventservice.exceptions.UserNotFoundException
+          - com.hs.lab2.groupeventservice.exceptions.UserNotFoundException
           - feign.FeignException$NotFound
           - reactivefeign.client.ReactiveFeignException
         recordExceptions:
