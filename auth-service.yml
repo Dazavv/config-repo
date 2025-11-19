@@ -2,17 +2,13 @@ server:
   port: 8084
 spring:
   application:
-    name: user-service
-  datasource:
-    url: jdbc:postgresql://postgres-auth-users:5432/auth-users-db
-    username: postgres
-    password: postgres
+    name: auth-service
+#  datasource:
+#    url: jdbc:postgresql://postgres-auth-users:5432/auth-users-db
+
   flyway:
     enabled: true
     locations: classpath:db/migration
-    url: jdbc:postgresql://postgres-auth-users:5432/auth-users-db
-    user: postgres
-    password: postgres
 
 eureka:
   client:
