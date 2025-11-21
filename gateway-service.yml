@@ -16,6 +16,7 @@ spring:
           uri: lb://user-service
           predicates:
             - Path=/api/v1/user/**
+            - Path=/api/v1/auth/**
         - id: event-service
           uri: lb://event-service
           predicates:
@@ -24,10 +25,6 @@ spring:
           uri: lb://group-event-service
           predicates:
             - Path=/api/v1/groupEvent/**
-        - id: auth-service
-          uri: lb://auth-service
-          predicates:
-            - Path=/api/v1/auth/**
 
 eureka:
   client:
