@@ -31,6 +31,22 @@ spring:
               predicates:
                 - Path=/api/v1/groupEvent/**
 
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    config-url: /v3/api-docs/swagger-config
+    urls:
+      - url: /v3/api-docs
+        name: API Gateway Service
+      - url: /api/v1/user/v3/api-docs
+        name: User Service
+      - url: /api/v1/event/v3/api-docs
+        name: Event Service
+      - url: /api/v1/groupEvent/v3/api-docs
+        name: Group Event Service
 eureka:
   client:
     service-url:
