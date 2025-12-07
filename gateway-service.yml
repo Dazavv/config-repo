@@ -22,14 +22,6 @@ spring:
               uri: lb://user-service
               predicates:
                 - Path=/api/v1/auth/**
-
-            - id: user-service-swagger
-              uri: lb://user-service
-              predicates:
-                - Path=/api/v1/user/v3/api-docs
-              filters:
-                - StripPrefix=3
-
             - id: event-service
               uri: lb://event-service
               predicates:
