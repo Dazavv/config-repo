@@ -13,11 +13,11 @@ spring:
           lower-case-service-id: false
 
       routes:
-        # ----- USER SERVICE -----
         - id: user-service-swagger
           uri: lb://user-service
           predicates:
             - Path=/api/v1/user/v3/api-docs
+            - Path=/api/v1/auth/v3/api-docs
           filters:
             - StripPrefix=3
 
@@ -31,7 +31,6 @@ spring:
           predicates:
             - Path=/api/v1/auth/**
 
-        # ----- EVENT SERVICE -----
         - id: event-service-swagger
           uri: lb://event-service
           predicates:
@@ -44,7 +43,6 @@ spring:
           predicates:
             - Path=/api/v1/event/**
 
-        # ----- GROUP EVENT SERVICE -----
         - id: group-event-service-swagger
           uri: lb://group-event-service
           predicates:
