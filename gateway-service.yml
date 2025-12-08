@@ -29,7 +29,7 @@ spring:
             - id: group-event-service
               uri: lb://group-event-service
               predicates:
-                - Path=/api/v1/groupEvent/**
+                - Path=/api/v1/group-event/**
 
 eureka:
   client:
