@@ -55,7 +55,7 @@ springdoc:
         name: User Service
       - url: /api/v1/event/v3/api-docs
         name: Event Service
-      - url: /api/v1/groupEvent/v3/api-docs
+      - url: /api/v1/group-event/v3/api-docs
         name: Group Event Service
 eureka:
   client:
