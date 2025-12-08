@@ -30,7 +30,7 @@ spring:
             - id: group-event-service-swagger
               uri: lb://group-event-service
               predicates:
-                - Path=/api/v1/groupEvent/v3/api-docs
+                - Path=/api/v1/group-event/v3/api-docs
               filters:
                 - StripPrefix=3
 
