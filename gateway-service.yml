@@ -26,17 +26,20 @@ spring:
               uri: lb://event-service
               predicates:
                 - Path=/api/v1/event/**
-            - id: group-event-service
-              uri: lb://group-event-service
-              predicates:
-                - Path=/api/v1/group-event/**
-                -
+
             - id: group-event-service-swagger
               uri: lb://group-event-service
               predicates:
                 - Path=/api/v1/groupEvent/v3/api-docs
               filters:
                 - StripPrefix=3
+
+            - id: group-event-service
+              uri: lb://group-event-service
+              predicates:
+                - Path=/api/v1/group-event/**
+
+
 
 springdoc:
   api-docs:
