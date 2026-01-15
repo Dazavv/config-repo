@@ -1,0 +1,25 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: notification-service
+
+#  jpa:
+#    open-in-view: false
+#    hibernate:
+#      ddl-auto: validate
+#
+#  flyway:
+#    enabled: true
+#    locations: classpath:db/migration
+#
+#springdoc:
+#  api-docs:
+#    path: /v3/api-docs
+#
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
