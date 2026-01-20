@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5493a71e-74bc-4412-8307-e300f4d58bf1" name="Changes" comment="add auth-service in routes">
+    <list default="true" id="5493a71e-74bc-4412-8307-e300f4d58bf1" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +14,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -25,17 +24,18 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Dazavv/config-repo.git&quot;,
-    &quot;accountId&quot;: &quot;cb0a78f6-a546-4534-b1a8-27c56daea9ec&quot;
+    &quot;url&quot;: &quot;git@github.com:Dazavv/config-repo.git&quot;,
+    &quot;accountId&quot;: &quot;87e0ce55-fe41-4a1b-9ee3-af6363c5993b&quot;
   }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
 }</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="33ySSimKTX6TFt1DSHN5NpjWvTZ" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,8 +58,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
       </set>
     </attachedChunks>
   </component>
@@ -73,9 +73,12 @@
       <workItem from="1760287822253" duration="763000" />
       <workItem from="1762289588323" duration="10135000" />
       <workItem from="1762730986231" duration="14000" />
-      <workItem from="1763670927751" duration="644000" />
-      <workItem from="1763731498581" duration="1309000" />
-      <workItem from="1763760965132" duration="593000" />
+      <workItem from="1762771332740" duration="2081000" />
+      <workItem from="1763304129489" duration="598000" />
+      <workItem from="1763982960504" duration="1585000" />
+      <workItem from="1763986085289" duration="1657000" />
+      <workItem from="1765142931743" duration="9268000" />
+      <workItem from="1765189045002" duration="4658000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <option name="closed" value="true" />
@@ -85,42 +88,154 @@
       <option name="project" value="LOCAL" />
       <updated>1762349344183</updated>
     </task>
-    <task id="LOCAL-00002" summary="fix">
+    <task id="LOCAL-00002" summary="fix: add feign exception resolver to group-event-service.yml">
       <option name="closed" value="true" />
-      <created>1763553858687</created>
+      <created>1762771457402</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1763553858687</updated>
+      <updated>1762771457402</updated>
     </task>
-    <task id="LOCAL-00003" summary="add auth-service in routes">
+    <task id="LOCAL-00003" summary="fix: add feign exception resolver to group-event-service.yml">
       <option name="closed" value="true" />
-      <created>1763561031327</created>
+      <created>1762771572261</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1763561031327</updated>
+      <updated>1762771572261</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix: rollback feign exception resolver to group-event-service.yml">
+      <option name="closed" value="true" />
+      <created>1762772568565</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762772568565</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Edit swagger predicates">
+      <option name="closed" value="true" />
+      <created>1765144535186</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765144535186</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Edit swagger predicates">
+      <option name="closed" value="true" />
+      <created>1765149559067</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765149559067</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Edit swagger predicates">
+      <option name="closed" value="true" />
+      <created>1765149787628</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1765149787628</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Edit swagger predicates">
+      <option name="closed" value="true" />
+      <created>1765151647133</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1765151647133</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Edit lower-case-service-id property">
+      <option name="closed" value="true" />
+      <created>1765152182492</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1765152182492</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Edit swagger predicates">
+      <option name="closed" value="true" />
+      <created>1765153508213</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1765153508213</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Edit swagger predicates">
+      <option name="closed" value="true" />
+      <created>1765153694543</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1765153694544</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Edit swagger predicates">
+      <option name="closed" value="true" />
+      <created>1765153995790</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1765153995791</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Edit swagger predicates">
+      <option name="closed" value="true" />
+      <created>1765154250693</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1765154250693</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Edit swagger predicates">
+      <option name="closed" value="true" />
+      <created>1765154406650</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1765154406651</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Edit swagger predicates">
+      <option name="closed" value="true" />
+      <created>1765203622466</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1765203622466</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Edit swagger predicates">
+      <option name="closed" value="true" />
+      <created>1765204263816</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1765204263816</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix">
+      <option name="closed" value="true" />
+      <created>1765204523219</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1765204523219</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix">
+      <option name="closed" value="true" />
+      <created>1765206996617</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1765206996617</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix: add feign exception resolver to group-event-service.yml" />
+    <MESSAGE value="fix: rollback feign exception resolver to group-event-service.yml" />
+    <MESSAGE value="Edit lower-case-service-id property" />
+    <MESSAGE value="Edit swagger predicates" />
     <MESSAGE value="fix" />
-    <MESSAGE value="add auth-service in routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="add auth-service in routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
